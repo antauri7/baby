@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Dulce Abigail Baby Shower//Invitation//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dulce-abigail-baby-shower-20260711@baby-abigail.local
+DTSTAMP:20260627T000000Z
+DTSTART;TZID=America/Mexico_City:20260711T140000
+DTEND;TZID=America/Mexico_City:20260711T180000
+SUMMARY:Baby Shower de Dulce Abigail
+LOCATION:Bominthza, Mpio. de San Salvador, Hidalgo
+DESCRIPTION:Baby shower de Dulce Abigail Flores Martinez. Llegada desde las 2:00 p. m. e inicio a las 3:00 p. m. Ubicación: https://maps.app.goo.gl/QruGiMUmTTr7vHYz7 Coordenadas: 20.311999, -99.008563
+URL:https://maps.app.goo.gl/QruGiMUmTTr7vHYz7
+END:VEVENT
+END:VCALENDAR
