@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baby Shower de Dulce Abigail</title>
+    <meta
+      name="description"
+      content="Invitación al baby shower de Dulce Abigail Flores Martinez, 11 de julio de 2026 en Bominthza, San Salvador, Hidalgo."
+    />
+    <meta property="og:title" content="Baby Shower de Dulce Abigail" />
+    <meta
+      property="og:description"
+      content="Los esperamos el 11 de julio de 2026 desde las 2:00 p. m."
+    />
+    <meta property="og:image" content="assets/baby-shower-hero.png" />
+    <meta name="theme-color" content="#f7d9d8" />
+    <link rel="preload" href="assets/baby-shower-hero.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true"></div>
+      <nav class="topbar" aria-label="Navegación principal">
+        <a href="#inicio" class="brand">Dulce Abigail</a>
+        <div class="topbar__links">
+          <a href="#detalles">Detalles</a>
+          <a href="#ubicacion">Ubicación</a>
+          <a href="#descargar">Descargar</a>
+          <a href="#confirmar">Confirmar</a>
+        </div>
+      </nav>
+
+      <div class="hero__content">
+        <p class="eyebrow">Baby shower</p>
+        <h1>Dulce Abigail Flores Martinez</h1>
+        <p class="hero__copy">
+          Una tarde llena de amor para celebrar la llegada de nuestra niña.
+        </p>
+        <div class="hero__actions" aria-label="Acciones principales">
+          <a class="button button--primary" href="#confirmar">Confirmar asistencia</a>
+          <button class="button button--ghost" type="button" id="musicToggle">
+            Escuchar canción
+          </button>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#detalles" aria-label="Ver detalles">Más detalles</a>
+    </header>
+
+    <main>
+      <section class="intro band">
+        <div class="intro__inner">
+          <p class="section-kicker">Con todo nuestro cariño</p>
+          <h2>Queremos compartir contigo este momento tan especial.</h2>
+          <p>
+            En la casa que verá crecer a nuestra bebé, nos reuniremos para
+            celebrar con alegría, ternura y muchas bendiciones la llegada de
+            Dulce Abigail.
+          </p>
+        </div>
+      </section>
+
+      <section class="family" aria-labelledby="family-title">
+        <div class="family__inner">
+          <figure class="family__art">
+            <img
+              src="assets/papas-elefantes.webp"
+              alt="Papá y mamá elefante esperando a Dulce Abigail"
+              width="1400"
+              height="700"
+              loading="lazy"
+            />
+          </figure>
+          <div class="family__copy">
+            <p class="section-kicker">Nuestra familia</p>
+            <h2 id="family-title">Dos corazones esperando a Dulce Abigail.</h2>
+            <p>
+              Papá y mamá celebran con ilusión la llegada de una luz a casa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" id="detalles" aria-labelledby="details-title">
+        <div class="section-heading">
+          <p class="section-kicker">Fecha y hora</p>
+          <h2 id="details-title">Sábado 11 de julio de 2026</h2>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <span class="detail-card__label">Llegada</span>
+            <strong>2:00 p. m.</strong>
+            <p>Los esperamos con mucho gusto desde esta hora.</p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-card__label">Inicio</span>
+            <strong>3:00 p. m.</strong>
+            <p>Comenzaremos la celebración principal.</p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-card__label">Lugar</span>
+            <strong>Bominthza</strong>
+            <p>Mpio. de San Salvador, Hidalgo.</p>
+          </article>
+        </div>
+
+        <div class="countdown" aria-label="Cuenta regresiva para el evento">
+          <div>
+            <span id="days">00</span>
+            <small>Días</small>
+          </div>
+          <div>
+            <span id="hours">00</span>
+            <small>Horas</small>
+          </div>
+          <div>
+            <span id="minutes">00</span>
+            <small>Minutos</small>
+          </div>
+          <div>
+            <span id="seconds">00</span>
+            <small>Segundos</small>
+          </div>
+        </div>
+
+        <div class="calendar-row">
+          <a class="text-link" href="assets/invitacion-dulce-abigail.ics" download>
+            Agregar al calendario
+          </a>
+        </div>
+      </section>
+
+      <section class="music band" aria-labelledby="music-title">
+        <div class="music__inner">
+          <div>
+            <p class="section-kicker">Nuestra canción</p>
+            <h2 id="music-title">En mi corazón vivirás</h2>
+            <p>
+              Una melodía para acompañar esta invitación con el mismo amor con
+              el que esperamos a Dulce Abigail.
+            </p>
+          </div>
+          <div class="player">
+            <button class="player__button" type="button" id="playerButton">
+              Reproducir
+            </button>
+            <div class="player__track" aria-hidden="true">
+              <span></span>
+            </div>
+            <audio
+              id="song"
+              preload="auto"
+              autoplay
+              playsinline
+              src="assets/cancion.mp3"
+            ></audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="ubicacion" aria-labelledby="location-title">
+        <div class="section-heading">
+          <p class="section-kicker">Ubicación</p>
+          <h2 id="location-title">La casa que verá crecer a nuestra bebé</h2>
+          <p>Bominthza, Mpio. de San Salvador, Hidalgo.</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-panel">
+            <iframe
+              title="Mapa para llegar al baby shower"
+              src="https://www.google.com/maps?q=20.311999,-99.008563&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <aside class="arrival-note">
+            <span class="detail-card__label">Coordenadas</span>
+            <strong>20.311999, -99.008563</strong>
+            <p>
+              Usa el mapa para llegar más rápido y abrir la ruta desde tu
+              aplicación favorita.
+            </p>
+            <a
+              class="button button--secondary"
+              href="https://maps.app.goo.gl/QruGiMUmTTr7vHYz7"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir ruta
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="download band" id="descargar" aria-labelledby="download-title">
+        <div class="download__inner">
+          <div class="download__copy">
+            <p class="section-kicker">Para compartir</p>
+            <h2 id="download-title">Descarga la invitación</h2>
+            <p>
+              Guarda una imagen lista para enviar por WhatsApp o compartir con
+              quien nos acompañará en este día tan especial.
+            </p>
+            <a
+              class="button button--primary"
+              href="assets/invitacion-dulce-abigail.png"
+              download="invitacion-dulce-abigail.png"
+            >
+              Descargar invitación
+            </a>
+          </div>
+          <a
+            class="invitation-preview"
+            href="assets/invitacion-dulce-abigail.png"
+            download="invitacion-dulce-abigail.png"
+            aria-label="Descargar imagen de la invitación"
+          >
+            <img
+              src="assets/invitacion-dulce-abigail.png"
+              alt="Imagen descargable de la invitación al baby shower"
+              width="1080"
+              height="1350"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="rsvp band" id="confirmar" aria-labelledby="rsvp-title">
+        <div class="rsvp__inner">
+          <p class="section-kicker">Te esperamos</p>
+          <h2 id="rsvp-title">Confirma tu asistencia</h2>
+          <p>
+            Tu presencia hará este día aún más bonito para nuestra familia y
+            para Dulce Abigail.
+          </p>
+          <a
+            class="button button--whatsapp"
+            href="https://wa.me/527721192410?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20baby%20shower%20de%20Dulce%20Abigail.%20"
+            target="_blank"
+            rel="noopener"
+          >
+            Confirmar por WhatsApp
+          </a>
+          <p class="phone">+52 772 119 2410</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Con amor, para celebrar la llegada de Dulce Abigail.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
